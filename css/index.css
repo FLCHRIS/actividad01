@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+
+    /* ### Neutral */
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+body {
+    font-family: 'Manrope', sans-serif;
+}
+.main {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DarkBlue);
+    font-size: 14px;
+}
+.main-card {
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: var(--DarkGrayishBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+    position: relative;
+    padding: 2em;
+}
+.card-title {
+    font-size: .9em;
+    letter-spacing: 3px;
+    color: var(--NeonGreen);
+}
+.card-advice {
+    padding: 1.5em 0 .5em;
+    color: var(--LightCyan);
+    font-size: 1.6em;
+}
+.card-img {
+    padding: 1.5em 0 3em;
+}
+.card-button {
+    width: 60px;
+    height: 60px;
+    padding: .8em;
+    border-radius: 50%;
+    background-color: var(--NeonGreen);
+    background-image: url('../images/icon-dice.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -30px;
+    transition: box-shadow .3s;
+    cursor: pointer;
+    border: none;
+}
+.card-button:hover {
+    box-shadow: 1px 1px 25px 1px var(--NeonGreen);
+}
+.attribution {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    text-align: end;
+    font-size: .7em;
+    color: var(--LightCyan);
+}
+.attribution a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color .3s;
+}
+.attribution a:hover {
+    color: var(--NeonGreen);
+}
